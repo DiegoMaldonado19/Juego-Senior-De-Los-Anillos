@@ -38,6 +38,22 @@ public class Bestia extends Personaje{
     }
 
     /**
+    * Metoado getter para obtener el ataque
+    * @return 
+    */
+    public int getAtaque() {
+        return getAtaque();
+    }
+
+    /**
+     * Metodo setter para setear el ataque
+     * @param ataque 
+     */
+    public void setAtaque(int ataque) {
+        setAtaque(ataque);
+    }
+    
+    /**
      * Metodo para mostrar a personaje
      */
     @Override

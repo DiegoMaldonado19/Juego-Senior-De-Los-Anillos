@@ -35,6 +35,22 @@ public class VectorPersonajes {
     }
     
     /**
+     * Metodo para obtener nuestro arreglo de heroes
+     * @return 
+     */
+    public Heroe[] getHeroes(){
+        return heroes;
+    }
+    
+    /**
+     * Metodo para obtener nuestro arreglo de bestias
+     * @return 
+     */
+    public Bestia[] getBestias(){
+        return bestias;
+    }
+    
+    /**
      * Metodo para inicializar heroes
      */
     public void inicializarHeroes(){

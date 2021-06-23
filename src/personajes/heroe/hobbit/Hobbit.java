@@ -30,10 +30,11 @@ public class Hobbit extends Heroe{
         this.ataque = ataque;
     }
 
-    /**
-     * Metodo getter para poder obtener el ataque
-     * @return 
-     */
+   /**
+    * Metoado getter para obtener el ataque
+    * @return 
+    */
+    @Override
     public int getAtaque() {
         return ataque;
     }
@@ -42,6 +43,7 @@ public class Hobbit extends Heroe{
      * Metodo setter para setear el ataque
      * @param ataque 
      */
+    @Override
     public void setAtaque(int ataque) {
         this.ataque = ataque;
     }

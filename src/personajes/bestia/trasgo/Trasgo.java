@@ -30,18 +30,20 @@ public class Trasgo extends Bestia{
         this.ataque = ataque;
     }
 
-    /**
-     * Obtenemos el ataque
-     * @return 
-     */
+   /**
+    * Metoado getter para obtener el ataque
+    * @return 
+    */
+    @Override
     public int getAtaque() {
         return ataque;
     }
 
     /**
-     * Seteamos el ataque
+     * Metodo setter para setear el ataque
      * @param ataque 
      */
+    @Override
     public void setAtaque(int ataque) {
         this.ataque = ataque;
     }

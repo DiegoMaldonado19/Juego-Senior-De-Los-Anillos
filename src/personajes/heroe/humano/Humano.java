@@ -35,6 +35,7 @@ public class Humano extends Heroe {
     * Metoado getter para obtener el ataque
     * @return 
     */
+    @Override
     public int getAtaque() {
         return ataque;
     }
@@ -43,6 +44,7 @@ public class Humano extends Heroe {
      * Metodo setter para setear el ataque
      * @param ataque 
      */
+    @Override
     public void setAtaque(int ataque) {
         this.ataque = ataque;
     }
