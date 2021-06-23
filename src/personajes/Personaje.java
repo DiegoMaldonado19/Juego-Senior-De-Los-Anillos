@@ -18,20 +18,20 @@ public class Personaje {
     private int vida;
     private int armadura;
     private boolean vivo;
-    private int ataque;
     
     /**
-     * Constructor por defecto de la clase personaje
-     * @param nombre 
+     * Constructor de personaje para crear un nuevo personaje
+     * @param nombre
+     * @param vida
+     * @param armadura 
      */
-    public Personaje(String nombre, int armadura, int ataque){
+    public Personaje(String nombre,int vida, int armadura){
         this.nombre = nombre;
-        this.vida = 100;
+        this.vida = vida;
         this.armadura = armadura;
-        this.ataque = ataque;
         this.vivo = true;
     }
-
+    
     /**
      * Metodo para obtener el nombre del personaje
      * @return 
@@ -79,22 +79,6 @@ public class Personaje {
     public boolean isVivo() {
         return vivo;
     }
-
-    /**
-     * Metodo para obtener el ataque de un personaje
-     * @return 
-     */
-    public int getAtaque(){
-        return ataque;
-    }
-    
-    /**
-     * Metodo para settear el ataque de un personaje
-     * @param ataque 
-     */
-    public void setAtaque(int ataque){
-        this.ataque = ataque;
-    }
     
     /**
      * Metodo para saber si está muerto el personaje
@@ -103,4 +87,11 @@ public class Personaje {
     public void setVivo(boolean vivo) {
         this.vivo = vivo;
     }    
+    
+    /**
+     * Metodo para mostrar a los personajes
+     */
+    public void mostrarPersonaje(){
+        System.out.println("Personaje [ Nombre: "+this.nombre);
+    }
 }

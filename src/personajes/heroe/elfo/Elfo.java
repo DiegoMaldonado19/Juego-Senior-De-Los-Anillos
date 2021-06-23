@@ -12,9 +12,49 @@ import personajes.heroe.Heroe;
  * @author Diego Maldonado
  */
 public class Elfo extends Heroe{
+    /**
+     * Clase elfo que extiende a heroe
+     */
+    private int ataque;
 
-    public Elfo(int id, String nombre, int armadura, int ataque) {
-        super(id, nombre, armadura, ataque);
+    /**
+     * Constructor para la clase elfo
+     * @param ataque, guarda el ataque
+     * @param id, guarda su id
+     * @param nombre, guarda su nombre
+     * @param vida, guarda su vida
+     * @param armadura, guarda su armadura
+     */
+    public Elfo(int ataque, int id, String nombre, int vida, int armadura) {
+        super(id, nombre, vida, armadura);
+        this.ataque = ataque;
+    }
+
+    /**
+     * Metodo getter para obtener el ataque 
+     * @return 
+     */
+    public int getAtaque() {
+        return ataque;
+    }
+
+    /**
+     * Metodo setter para setear el ataque
+     * @param ataque 
+     */
+    public void setAtaque(int ataque) {
+        this.ataque = ataque;
     }
     
+    /**
+     * Metodo para mostrar al personaje
+     */
+    @Override
+    public void mostrarPersonaje(){
+        System.out.println("Elfo [Id: "+getId()+" Nombre: "+getNombre()+ " Armadura: "+
+                getArmadura()+" Ataque: "+this.ataque);
+    }
+
+    
+
 }

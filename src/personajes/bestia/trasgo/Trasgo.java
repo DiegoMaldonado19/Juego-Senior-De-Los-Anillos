@@ -12,9 +12,47 @@ import personajes.bestia.Bestia;
  * @author Diego Maldonado
  */
 public class Trasgo extends Bestia{
+    /**
+     * Clase trasgo que extiende a bestia
+     */
+    private int ataque;
 
-    public Trasgo(int id, String nombre, int armadura, int ataque) {
-        super(id, nombre, armadura, ataque);
+    /**
+     * Constructor de la clase trasgo
+     * @param ataque, almacena el ataque
+     * @param id, almacena su id
+     * @param nombre, almacena su nombre
+     * @param vida, almacena su vida
+     * @param armadura, almacena su armadura
+     */
+    public Trasgo(int ataque, int id, String nombre, int vida, int armadura) {
+        super(id, nombre, vida, armadura);
+        this.ataque = ataque;
+    }
+
+    /**
+     * Obtenemos el ataque
+     * @return 
+     */
+    public int getAtaque() {
+        return ataque;
+    }
+
+    /**
+     * Seteamos el ataque
+     * @param ataque 
+     */
+    public void setAtaque(int ataque) {
+        this.ataque = ataque;
+    }
+    
+    /**
+     * Metodo para mostrar al personaje
+     */
+    @Override
+    public void mostrarPersonaje(){
+        System.out.println("Trasgo [Id: "+getId()+" Nombre: "+getNombre()+ " Armadura: "+
+                getArmadura()+" Ataque: "+this.ataque);
     }
     
 }
