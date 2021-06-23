@@ -12,5 +12,9 @@ import personajes.bestia.Bestia;
  * @author Diego Maldonado
  */
 public class Orco extends Bestia{
+
+    public Orco(int id, String nombre, int armadura, int ataque) {
+        super(id, nombre, armadura, ataque);
+    }
     
 }

@@ -12,5 +12,9 @@ import personajes.heroe.Heroe;
  * @author Diego Maldonado
  */
 public class Hobbit extends Heroe{
+
+    public Hobbit(int id, String nombre, int armadura, int ataque) {
+        super(id, nombre, armadura, ataque);
+    }
     
 }

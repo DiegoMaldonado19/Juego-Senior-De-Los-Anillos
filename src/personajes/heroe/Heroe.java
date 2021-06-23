@@ -13,4 +13,23 @@ import personajes.Personaje;
  */
 public class Heroe extends Personaje {
     
+    private int id;
+
+    public Heroe(int id, String nombre, int armadura, int ataque) {
+        super(nombre, armadura, ataque);
+        this.id = id;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+    
+    public String mostrarHeroe(){
+        return "Heroe [Id"+this.id+" Nombre: "+getNombre()+"]";
+    }
+    
 }

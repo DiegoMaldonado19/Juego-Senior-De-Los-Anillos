@@ -12,5 +12,9 @@ import personajes.heroe.Heroe;
  * @author Diego Maldonado
  */
 public class Elfo extends Heroe{
+
+    public Elfo(int id, String nombre, int armadura, int ataque) {
+        super(id, nombre, armadura, ataque);
+    }
     
 }
